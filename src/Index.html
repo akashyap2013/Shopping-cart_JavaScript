@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shopping Cart</title>
+
+  <!-- Include Bootstrap Library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Include Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Include Custom stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <h3 class="px-5">
+          <i class="fas fa-shopping-basket"></i> Shopping Cart
+        </h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="mr-auto"></div>
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="./cart_items.html">
+            <h5 class="px-5 cart"><i class="fas fa-shopping-cart"></i> Cart</h5>
+            <span id="count-cart" class="bg-warning">0</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row text-center py-5">
+        <div class="col-sm-6 col-md-3 ">
+          <div class="card shadow">
+            <div>
+              <img src="" class="card-img-top py-4" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half"></i>
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card.
+              </p>
+              <h5>
+                <strike class="text-secondary">$282.99</strike>
+                <span class="price"></span>
+              </h5>
+              <button class="btn btn-warning my-3" data-product-name="Experia Tablet">
+                Add to Cart <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card shadow">
+            <div>
+              <img src="" class="card-img-top py-4" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6>
+                <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half"></i>
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card.
+              </p>
+              <h5>
+                <strike class="text-secondary">$599.99</strike>
+                <span class="price"></span>
+              </h5>
+              <button class="btn btn-warning my-3" data-product-name="Nikon D3500 Camera">
+                Add to Cart <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card shadow">
+            <div>
+              <img src="" class="card-img-top py-4" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6>
+                <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half"></i>
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card.
+              </p>
+              <h5>
+                <strike class="text-secondary">$1199.99</strike>
+                <span class="price"></span>
+              </h5>
+              <button class="btn btn-warning my-3" data-product-name="Apple iMac">
+                Add to Cart <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card shadow">
+            <div>
+              <img src="" class="card-img-top py-4" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <h6>
+                <i class="fas fa-star"></i><i class="fas fa-star"><i class="fas fa-star"></i></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half"></i>
+              </h6>
+              <p class="card-text">
+                Some quick example text to build on the card.
+              </p>
+              <h5>
+                <strike class="text-secondary">$2492.99</strike>
+                <span class="price"></span>
+              </h5>
+              <button class="btn btn-warning my-3" data-product-name="Samsung Refrigerator">
+                Add to Cart <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Include Bootstrap CDNs -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- Include Dexie -->
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+  <!-- Include custom file -->
+  <script src="../js/main.js" type="module"></script>
+
+</body>
+
+</html>

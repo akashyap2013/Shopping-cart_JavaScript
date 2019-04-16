@@ -1,0 +1,63 @@
+img {
+  max-width: 100%;
+  height: auto;
+  background: lightblue;
+  background: radial-gradient(white 30%, lightblue 70%);
+}
+
+.fa-star,
+.fa-star-half {
+  color: yellowgreen;
+}
+
+.nav-item {
+  position: relative;
+}
+
+#count-cart {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 30px;
+  top: -5px;
+  left: 40px;
+  text-align: center;
+  color: #2f3b40;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.scale-cart {
+  transform: scale(1) !important;
+}
+
+/* Cart */
+.card .card-body .card-title {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.clearAll {
+  margin: 1rem 16rem 4rem 0;
+}
+
+.removemsg {
+  position: absolute;
+  top: -40px;
+  z-index: 9999;
+}
+
+.addmsg {
+  animation: slidedown 4.5s ease;
+}
+
+@keyframes slidedown {
+  50% {
+    top: 0px;
+  }
+
+  100% {
+    top: -40px;
+  }
+
+}
